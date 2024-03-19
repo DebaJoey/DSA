@@ -23,5 +23,15 @@ for(int i = 0; i < 3; i++)
     length++;
 }
 
-intArray[length] = 8;
-length++;
+//intArray[length] = 8;
+//length++;
+
+//Inserting At The Start Of An Array
+
+for(int i = 3; i >= 0; i--)
+{
+    //this is moving over all the values
+    intArray[i + 1] = intArray[i];
+}
+
+intArray[0] = 20;

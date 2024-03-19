@@ -8,7 +8,6 @@ namespace DSA.AbstractDataType
 		public int Exp { get; set; }
 
 
-
 		public bool isPokemon()
 		{
 			return true;

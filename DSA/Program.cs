@@ -12,12 +12,12 @@ Console.WriteLine(squirtle.isPokemon());
 
 //Inserting at the end of an array
 
-int[] intArray = new int[6];
+int[] intArray = new int[10];
 
 
 int length = 0;
 
-for(int i = 0; i < 3; i++)
+for(int i = 0; i < 8; i++)
 {
     intArray[length] = i;
     length++;
@@ -28,10 +28,23 @@ for(int i = 0; i < 3; i++)
 
 //Inserting At The Start Of An Array
 
-for(int i = 3; i >= 0; i--)
+//for(int i = 3; i >= 0; i--)
+//{
+    //this is moving all the values by one index
+    //intArray[i + 1] = intArray[i];
+//}
+
+//intArray[0] = 20;
+
+
+//Inserting Anywhere In The Array
+
+for(int i = 4; i >= 2; i-- )
 {
-    //this is moving over all the values
+    //Shift each element one position to the right
     intArray[i + 1] = intArray[i];
 }
 
-intArray[0] = 20;
+intArray[2] = 8;
+
+int coco = 9;

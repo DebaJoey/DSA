@@ -8,3 +8,20 @@ Pokemon squirtle = new Pokemon();
 
 Console.WriteLine(squirtle.isPokemon());
 
+//Array Insertions And Deletions
+
+//Inserting at the end of an array
+
+int[] intArray = new int[6];
+
+
+int length = 0;
+
+for(int i = 0; i < 3; i++)
+{
+    intArray[length] = i;
+    length++;
+}
+
+intArray[length] = 8;
+length++;

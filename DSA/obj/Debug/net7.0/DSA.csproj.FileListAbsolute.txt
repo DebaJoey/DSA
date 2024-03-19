@@ -1,0 +1,14 @@
+/Users/macbook/Desktop/DSA CSharp/DSA/DSA/bin/Debug/net7.0/DSA
+/Users/macbook/Desktop/DSA CSharp/DSA/DSA/bin/Debug/net7.0/DSA.deps.json
+/Users/macbook/Desktop/DSA CSharp/DSA/DSA/bin/Debug/net7.0/DSA.runtimeconfig.json
+/Users/macbook/Desktop/DSA CSharp/DSA/DSA/bin/Debug/net7.0/DSA.dll
+/Users/macbook/Desktop/DSA CSharp/DSA/DSA/bin/Debug/net7.0/DSA.pdb
+/Users/macbook/Desktop/DSA CSharp/DSA/DSA/obj/Debug/net7.0/DSA.GeneratedMSBuildEditorConfig.editorconfig
+/Users/macbook/Desktop/DSA CSharp/DSA/DSA/obj/Debug/net7.0/DSA.AssemblyInfoInputs.cache
+/Users/macbook/Desktop/DSA CSharp/DSA/DSA/obj/Debug/net7.0/DSA.AssemblyInfo.cs
+/Users/macbook/Desktop/DSA CSharp/DSA/DSA/obj/Debug/net7.0/DSA.csproj.CoreCompileInputs.cache
+/Users/macbook/Desktop/DSA CSharp/DSA/DSA/obj/Debug/net7.0/DSA.dll
+/Users/macbook/Desktop/DSA CSharp/DSA/DSA/obj/Debug/net7.0/refint/DSA.dll
+/Users/macbook/Desktop/DSA CSharp/DSA/DSA/obj/Debug/net7.0/DSA.pdb
+/Users/macbook/Desktop/DSA CSharp/DSA/DSA/obj/Debug/net7.0/DSA.genruntimeconfig.cache
+/Users/macbook/Desktop/DSA CSharp/DSA/DSA/obj/Debug/net7.0/ref/DSA.dll

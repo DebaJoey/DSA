@@ -4,24 +4,24 @@ using DSA.AbstractDataType;
 
 //Abstract Data Type
 
-Pokemon squirtle = new Pokemon();
+//Pokemon squirtle = new Pokemon();
 
-Console.WriteLine(squirtle.isPokemon());
+//Console.WriteLine(squirtle.isPokemon());
 
 //Array Insertions And Deletions
 
 //Inserting at the end of an array
 
-int[] intArray = new int[10];
+//int[] intArray = new int[10];
 
 
-int length = 0;
+//int length = 0;
 
-for(int i = 0; i < 8; i++)
-{
-    intArray[length] = i;
-    length++;
-}
+//for(int i = 0; i < 8; i++)
+//{
+    //intArray[length] = i;
+   // length++;
+//}
 
 //intArray[length] = 8;
 //length++;
@@ -39,12 +39,29 @@ for(int i = 0; i < 8; i++)
 
 //Inserting Anywhere In The Array
 
-for(int i = 4; i >= 2; i-- )
-{
+//for(int i = 4; i >= 2; i-- )
+//{
     //Shift each element one position to the right
-    intArray[i + 1] = intArray[i];
+ //   intArray[i + 1] = intArray[i];
+//}
+
+//intArray[2] = 8;
+
+
+int[] delArray = new int[9];
+
+int length1 = 0;
+
+for(int i = 0; i < 6; i++)
+{
+    delArray[length1] = i;
+    length1++;
 }
 
-intArray[2] = 8;
+length1--;
 
-int coco = 9;
+for(int i = 0; i < length1; i++)
+{
+    Console.WriteLine(delArray[i]);
+}
+

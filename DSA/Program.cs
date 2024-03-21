@@ -19,8 +19,8 @@ using DSA.AbstractDataType;
 
 //for(int i = 0; i < 8; i++)
 //{
-    //intArray[length] = i;
-   // length++;
+//intArray[length] = i;
+// length++;
 //}
 
 //intArray[length] = 8;
@@ -30,8 +30,8 @@ using DSA.AbstractDataType;
 
 //for(int i = 3; i >= 0; i--)
 //{
-    //this is moving all the values by one index
-    //intArray[i + 1] = intArray[i];
+//this is moving all the values by one index
+//intArray[i + 1] = intArray[i];
 //}
 
 //intArray[0] = 20;
@@ -41,11 +41,13 @@ using DSA.AbstractDataType;
 
 //for(int i = 4; i >= 2; i-- )
 //{
-    //Shift each element one position to the right
- //   intArray[i + 1] = intArray[i];
+//Shift each element one position to the right
+//   intArray[i + 1] = intArray[i];
 //}
 
 //intArray[2] = 8;
+
+Console.WriteLine(HackerRankSpace.marsExploration("SOSSPSROSPOS"));
 
 
 int[] delArray = new int[9];

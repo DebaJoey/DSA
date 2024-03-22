@@ -47,7 +47,7 @@ using DSA.AbstractDataType;
 
 //intArray[2] = 8;
 
-Console.WriteLine(HackerRankSpace.marsExploration("SOSSPSROSPOS"));
+Console.WriteLine(HackerRankSpace.marsExploration("SOSSPSSOSSOSSOS"));
 
 
 int[] delArray = new int[9];

@@ -47,14 +47,16 @@ using DSA.AbstractDataType;
 
 //intArray[2] = 8;
 
-Console.WriteLine(HackerRankSpace.marsExploration("SOSSPSSOSSOSSOS"));
+int sln = HackerRankSpace.marsExploration("SOSSPSSOSSOSSOS");
+
+
 
 
 int[] delArray = new int[9];
 
 int length1 = 0;
 
-for(int i = 0; i < 6; i++)
+for (int i = 0; i < 6; i++)
 {
     delArray[length1] = i;
     length1++;
@@ -62,7 +64,7 @@ for(int i = 0; i < 6; i++)
 
 length1--;
 
-for(int i = 0; i < length1; i++)
+for (int i = 0; i < length1; i++)
 {
     Console.WriteLine(delArray[i]);
 }

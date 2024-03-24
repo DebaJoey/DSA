@@ -48,6 +48,28 @@ namespace DSA.Arrays
 
 			return newArray;
 		}
+
+		public static int[] InsertAtEnd(int[] array, int value)
+		{
+			int[] newArray = new int[array.Length + 1];
+
+			for(int i = 0; i < array.Length; i++)
+			{
+				newArray[i] = array[i];
+			}
+
+			newArray[array.Length] = value;
+
+			Console.WriteLine("\n");
+
+			foreach(int element in newArray)
+			{
+				Console.Write(element + ",");
+			}
+
+
+			return newArray;
+		}
 	}
 }
 

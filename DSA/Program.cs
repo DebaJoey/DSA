@@ -53,13 +53,20 @@ int sln = HackerRankSpace.marsExploration("SOSJPSSOSSOSSOS");
 
 Console.WriteLine(sln);
 
-
+//Array to Work With
 int[] delArray = {2, 3, 4, 5, 6, 7, 8, 9};
 
+//Insert At Start
 Arrays.InsertStart(delArray, 15);
 
 Console.WriteLine("\n");
 
+//Insert Anywhere in Array
 Arrays.InsertAnywhere(delArray, 4, 2000);
+
+//Insert At Array End
+Arrays.InsertAtEnd(delArray, 2000);
+
+
 
 

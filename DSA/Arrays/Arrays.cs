@@ -23,6 +23,31 @@ namespace DSA.Arrays
 
 			return newArray;
 		}
+
+		public static int[] InsertAnywhere(int[] array, int position, int value)
+		{
+
+			int[] newArray = new int[array.Length + 1];
+
+			for(int i = 0; i < position; i++)
+			{
+				newArray[i] = array[i];
+			}
+
+			newArray[position] = value;
+
+			for(int i = position; i < array.Length; i++)
+			{
+				newArray[i + 1] = array[i];
+			}
+
+			foreach(int element in newArray)
+			{
+				Console.Write(element + ",");
+			}
+
+			return newArray;
+		}
 	}
 }
 

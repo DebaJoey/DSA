@@ -58,4 +58,8 @@ int[] delArray = {2, 3, 4, 5, 6, 7, 8, 9};
 
 Arrays.InsertStart(delArray, 15);
 
+Console.WriteLine("\n");
+
+Arrays.InsertAnywhere(delArray, 4, 2000);
+
 

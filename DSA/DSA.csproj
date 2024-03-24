@@ -9,8 +9,10 @@
 
   <ItemGroup>
     <None Remove="Abstract Data Type\" />
+    <None Remove="Arrays\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract Data Type\" />
+    <Folder Include="Arrays\" />
   </ItemGroup>
 </Project>

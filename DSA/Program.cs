@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using DSA.AbstractDataType;
+using DSA.Arrays;
 
 //Abstract Data Type
 
@@ -52,20 +53,9 @@ int sln = HackerRankSpace.marsExploration("SOSSPSSOSSOSSOS");
 
 
 
-int[] delArray = new int[9];
 
-int length1 = 0;
+int[] delArray = {2, 3, 4, 5, 6, 7, 8, 9};
 
-for (int i = 0; i < 6; i++)
-{
-    delArray[length1] = i;
-    length1++;
-}
+Arrays.InsertStart(delArray, 15);
 
-length1--;
-
-for (int i = 0; i < length1; i++)
-{
-    Console.WriteLine(delArray[i]);
-}
 

@@ -48,10 +48,10 @@ using DSA.Arrays;
 
 //intArray[2] = 8;
 
-int sln = HackerRankSpace.marsExploration("SOSSPSSOSSOSSOS");
+int sln = HackerRankSpace.marsExploration("SOSJPSSOSSOSSOS");
 
 
-
+Console.WriteLine(sln);
 
 
 int[] delArray = {2, 3, 4, 5, 6, 7, 8, 9};

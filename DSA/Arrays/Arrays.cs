@@ -70,6 +70,76 @@ namespace DSA.Arrays
 
 			return newArray;
 		}
+
+
+		//Delete
+		public static int[] DeleteAtStart(int[] array)
+		{
+			int[] newArray = new int[array.Length - 1];
+
+			for(int i = 0; i < newArray.Length; i++)
+			{
+				newArray[i] = array[i + 1];
+			}
+
+			Console.WriteLine("\n");
+
+			foreach(int element in newArray)
+			{
+				Console.Write(element + ",");
+			}
+
+			return newArray;
+		}
+
+		public static int[] DeleteAtEnd(int[] array)
+		{
+			int[] newArray = new int[array.Length - 1];
+
+			for(int i = 0; i < newArray.Length; i++)
+			{
+				newArray[i] = array[i];
+			}
+
+            Console.WriteLine("\n");
+
+            foreach (int element in newArray)
+            {
+                Console.Write(element + ",");
+            }
+
+
+            return newArray;
+        }
+
+		public static int[] DeleteAnywhere(int[] array, int position)
+		{
+			int[] newArray = new int[array.Length - 1];
+
+			for(int i = 0; i < position; i++)
+			{
+				newArray[i] = array[i];
+			}
+
+			newArray[position] = array[position + 1];
+
+			for(int i = position + 1; i < newArray.Length; i++)
+			{
+				newArray[i] = array[i + 1];
+			}
+
+            Console.WriteLine("\n");
+
+            foreach (int element in newArray)
+            {
+                Console.Write(element + ",");
+            }
+
+
+            return newArray;
+
+        }
+    
 	}
 }
 

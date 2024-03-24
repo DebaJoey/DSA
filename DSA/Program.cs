@@ -67,6 +67,16 @@ Arrays.InsertAnywhere(delArray, 4, 2000);
 //Insert At Array End
 Arrays.InsertAtEnd(delArray, 2000);
 
+//Delete At Array Start
+Arrays.DeleteAtStart(delArray);
+
+//Delete At Array End
+Arrays.DeleteAtEnd(delArray);
+
+//Delete Anywhere in Array
+Arrays.DeleteAnywhere(delArray, 3);
+
+
 
 
 

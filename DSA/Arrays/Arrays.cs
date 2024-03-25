@@ -82,13 +82,6 @@ namespace DSA.Arrays
 				newArray[i] = array[i + 1];
 			}
 
-			Console.WriteLine("\n");
-
-			foreach(int element in newArray)
-			{
-				Console.Write(element + ",");
-			}
-
 			return newArray;
 		}
 

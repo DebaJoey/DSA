@@ -3,6 +3,7 @@ namespace DSA.Arrays
 {
 	public class Arrays
 	{
+		//Insert
 		public static int[] InsertStart(int[] array, int newValue)
 		{
 			int[] newArray = new int[array.Length + 1];

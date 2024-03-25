@@ -128,13 +128,6 @@ namespace DSA.Arrays
 				newArray[i] = array[i + 1];
 			}
 
-           
-
-            foreach (int element in newArray)
-            {
-                Console.Write(element + ",");
-            }
-
 
             return newArray;
 

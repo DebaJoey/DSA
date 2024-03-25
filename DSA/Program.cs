@@ -2,6 +2,7 @@
 
 using DSA.AbstractDataType;
 using DSA.Arrays;
+using DSA.Hackerrank;
 
 //Abstract Data Type
 
@@ -75,6 +76,14 @@ Arrays.DeleteAtEnd(delArray);
 
 //Delete Anywhere in Array
 Arrays.DeleteAnywhere(delArray, 3);
+
+Console.WriteLine("\n");
+
+Console.WriteLine(String.Compare("C","E"));
+
+LexicographicallySmallestString.smallestString("bbcacad");
+
+//LexicographicallySmallestString.insertAnywhere("b", "c", "bbcacad");
 
 
 

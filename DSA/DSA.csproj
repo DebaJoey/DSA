@@ -10,9 +10,11 @@
   <ItemGroup>
     <None Remove="Abstract Data Type\" />
     <None Remove="Arrays\" />
+    <None Remove="Hackerrank\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract Data Type\" />
     <Folder Include="Arrays\" />
+    <Folder Include="Hackerrank\" />
   </ItemGroup>
 </Project>

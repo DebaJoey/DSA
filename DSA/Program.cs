@@ -95,14 +95,15 @@ using DSA.Hackerrank;
 //tObj.StopTime();
 //Console.WriteLine("time (.NET):" + tObj.Result().TotalSeconds);
 
-int[,] grades = new int[,] { { 1, 82, 74, 89, 100 },
-                             { 2, 93, 96, 85, 86 },
-                             { 3, 83, 72, 95, 89 },
-                             { 4, 91, 98, 79, 88 } };
-int nasem = grades[3, 4];
+//int[,] grades = new int[,] { { 1, 82, 74, 89, 100 },
+//                             { 2, 93, 96, 85, 86 },
+//                             { 3, 83, 72, 95, 89 },
+//                             { 4, 91, 98, 79, 88 } };
+//int nasem = grades[3, 4];
 
-Arrays.AverageGrades(grades);
+//Arrays.AverageGrades(grades);
 
+Arrays.Sum(99, 33, 1000);
 
 
 

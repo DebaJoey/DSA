@@ -156,8 +156,22 @@ namespace DSA.Arrays
 				averageArray[row] = average;
 			}
 
-			Console.WriteLine(averageArray.GetValue(2));
 			return averageArray;
+		}
+
+		//Params Array
+		public static int Sum(params int[] nums)
+		{
+			int sum = 0;
+
+			foreach(int num in nums)
+			{
+				sum += num;
+			}
+
+			Console.WriteLine(sum);
+
+			return sum;
 		}
 
     }

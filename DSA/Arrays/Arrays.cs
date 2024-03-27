@@ -132,10 +132,12 @@ namespace DSA.Arrays
         }
 
 		//2DArray
-		public static double AverageGrades(int[,] grades)
+		public static double[] AverageGrades(int[,] grades)
 		{
+
+			double[] averageArray = new double[grades.GetLength(0)];
 			int lastGrade = grades.GetUpperBound(1);
-			double average = 0.0;
+			
 			int total;
 			int lastStudent = grades.GetUpperBound(0);
 
@@ -148,12 +150,14 @@ namespace DSA.Arrays
 					total += grades[row, col]; 
 				}
 
-				average = (double)total / grades.GetLength(1);
+			  double average = (double)total / grades.GetLength(1);
 
 				Console.WriteLine("Average grade of student" + (row + 1) + " is " + average);
+				averageArray[row] = average;
 			}
 
-			return 0.0;
+			Console.WriteLine(averageArray.GetValue(2));
+			return averageArray;
 		}
 
     }

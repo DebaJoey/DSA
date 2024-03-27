@@ -103,8 +103,21 @@ using DSA.Hackerrank;
 
 //Arrays.AverageGrades(grades);
 
-Arrays.Sum(99, 33, 1000);
+//Arrays.Sum(99, 33, 1000);
 
+//Jagged Arrays
 
+//int[][] jagged = new int[2][];
+//jagged[0] = new int[] { 1, 2, 3 };
+//jagged[1] = new int[] { 45, 6, 89 };
+
+//int[] jan = new int[30];
+//int[] feb = new int[29];
+
+//int[][] sales;
+
+//sales = new int[][] { jan, feb };
+//sales[0][0] = 2000;
+//sales[0][1] = 1080;
 
 

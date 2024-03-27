@@ -118,7 +118,44 @@ namespace DSA.Arrays
             return newArray;
 
         }
-    
-	}
+
+        public static void BuildArray(int[] arr)
+        {
+            for (int i = 0; i < arr.Length; i++)
+                arr[i] = i;
+        }
+
+        public static void DisplayNums(int[] arr)
+        {
+            for (int i = 0; i <= arr.GetUpperBound(0); i++)
+                Console.Write(arr[i] + " ");
+        }
+
+		//2DArray
+		public static double AverageGrades(int[,] grades)
+		{
+			int lastGrade = grades.GetUpperBound(1);
+			double average = 0.0;
+			int total;
+			int lastStudent = grades.GetUpperBound(0);
+
+			for (int row = 0; row <= lastStudent; row++)
+			{
+				total = 0;
+
+				for(int col = 0; col <= lastGrade; col++)
+				{
+					total += grades[row, col]; 
+				}
+
+				average = (double)total / grades.GetLength(1);
+
+				Console.WriteLine("Average grade of student" + (row + 1) + " is " + average);
+			}
+
+			return 0.0;
+		}
+
+    }
 }
 

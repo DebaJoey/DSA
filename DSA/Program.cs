@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using System.Diagnostics;
+using DSA;
 using DSA.AbstractDataType;
 using DSA.Arrays;
 using DSA.Hackerrank;
@@ -49,41 +51,57 @@ using DSA.Hackerrank;
 
 //intArray[2] = 8;
 
-int sln = HackerRankSpace.marsExploration("SOSJPSSOSSOSSOS");
+//int sln = HackerRankSpace.marsExploration("SOSJPSSOSSOSSOS");
 
 
-Console.WriteLine(sln);
+//Console.WriteLine(sln);
 
 //Array to Work With
-int[] delArray = {2, 3, 4, 5, 6, 7, 8, 9};
+//int[] delArray = {2, 3, 4, 5, 6, 7, 8, 9};
 
 //Insert At Start
-Arrays.InsertStart(delArray, 15);
+//Arrays.InsertStart(delArray, 15);
 
-Console.WriteLine("\n");
+//Console.WriteLine("\n");
 
 //Insert Anywhere in Array
-Arrays.InsertAnywhere(delArray, 4, 2000);
+//Arrays.InsertAnywhere(delArray, 4, 2000);
 
 //Insert At Array End
-Arrays.InsertAtEnd(delArray, 2000);
+//Arrays.InsertAtEnd(delArray, 2000);
 
 //Delete At Array Start
-Arrays.DeleteAtStart(delArray);
+//Arrays.DeleteAtStart(delArray);
 
 //Delete At Array End
-Arrays.DeleteAtEnd(delArray);
+//Arrays.DeleteAtEnd(delArray);
 
 //Delete Anywhere in Array
-Arrays.DeleteAnywhere(delArray, 3);
+//Arrays.DeleteAnywhere(delArray, 3);
 
-Console.WriteLine("\n");
+//Console.WriteLine("\n");
 
-Console.WriteLine(String.Compare("C","E"));
+//Console.WriteLine(String.Compare("C","E"));
 
-LexicographicallySmallestString.smallestString("bbcacad");
+//LexicographicallySmallestString.smallestString("bbcacad");
 
 //LexicographicallySmallestString.insertAnywhere("b", "c", "bbcacad");
+
+//int[] nums = new int[20];
+//Arrays.BuildArray(nums);
+//Timing tObj = new Timing();
+//tObj.startTime();
+//Arrays.DisplayNums(nums);
+//tObj.StopTime();
+//Console.WriteLine("time (.NET):" + tObj.Result().TotalSeconds);
+
+int[,] grades = new int[,] { { 1, 82, 74, 89, 100 },
+                             { 2, 93, 96, 85, 86 },
+                             { 3, 83, 72, 95, 89 },
+                             { 4, 91, 98, 79, 88 } };
+int nasem = grades[3, 4];
+
+Arrays.AverageGrades(grades);
 
 
 

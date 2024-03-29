@@ -4,7 +4,7 @@ namespace DSA.Arrays
 	public class CArray
 	{
 		private int[] arr;
-		private int upper;
+		public int upper;
 		private int numElements;
 
 
@@ -38,6 +38,7 @@ namespace DSA.Arrays
 				numElements = 0;
 			}
 		}
+
 	}
 }
 

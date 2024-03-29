@@ -1,8 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using System.Collections;
 using System.Diagnostics;
 using DSA;
 using DSA.AbstractDataType;
+using DSA.Algorithms;
 using DSA.Arrays;
 using DSA.Hackerrank;
 
@@ -120,4 +122,17 @@ using DSA.Hackerrank;
 //sales[0][0] = 2000;
 //sales[0][1] = 1080;
 
+
+CArray nums = new CArray(10);
+Random rnd = new Random(100);
+int[] aL = new int[] { 57, 90, 22, 45, 6 };
+
+for(int i = 0; i < 10; i++)
+{
+    nums.Insert((int)(rnd.NextDouble() * 100));
+}
+
+//nums.DisplayElements();
+
+SortingAlgorithms.BubbleSortAscending(aL);
 

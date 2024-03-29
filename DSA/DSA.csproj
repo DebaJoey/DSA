@@ -11,10 +11,12 @@
     <None Remove="Abstract Data Type\" />
     <None Remove="Arrays\" />
     <None Remove="Hackerrank\" />
+    <None Remove="Algorithms\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract Data Type\" />
     <Folder Include="Arrays\" />
     <Folder Include="Hackerrank\" />
+    <Folder Include="Algorithms\" />
   </ItemGroup>
 </Project>

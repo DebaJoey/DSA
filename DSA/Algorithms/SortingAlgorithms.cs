@@ -29,26 +29,27 @@ namespace DSA.Algorithms
         public static void SelectionSort(int[] arr)
         {
             int n = arr.Length;
-            int min, temp;   //min = minimium, temp=temporal;
-            for (int outer = 0; outer <= n - 1; outer++)
-            {
-                min = outer;
-                for(int inner = outer + 1; inner < n; inner++)
-                {
-                    if (arr[inner] < arr[min])
-                    {
-                        min = inner;
-                    }
+            int minIndex, temp;
 
+            for(int outter = 0; outter < n-1; outter++)
+            {
+                minIndex = outter;
+
+                for(int inner = outter + 1; inner < n; inner++)
+                {
+                    if(arr[inner] < arr[minIndex])
+                    {
+                        minIndex = inner;
+                    }
                 }
 
+                temp = arr[minIndex];
+                arr[minIndex] = arr[outter];
+                arr[outter] = temp;
 
-                temp = arr[outer];
-                arr[outer] = arr[min];
-                arr[min] = temp;
             }
 
-            for(int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++)
             {
                 Console.Write(arr[i] + ",");
             }

@@ -134,5 +134,5 @@ for(int i = 0; i < 10; i++)
 
 //nums.DisplayElements();
 
-SortingAlgorithms.BubbleSortAscending(aL);
-
+//SortingAlgorithms.BubbleSortAscending(aL);
+SortingAlgorithms.SelectionSort(aL);

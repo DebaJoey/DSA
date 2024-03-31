@@ -40,10 +40,17 @@ namespace DSA.Algorithms
                         min = inner;
                     }
 
-                    temp = arr[outer];
-                    arr[outer] = arr[min];
-                    arr[min] = temp;
                 }
+
+
+                temp = arr[outer];
+                arr[outer] = arr[min];
+                arr[min] = temp;
+            }
+
+            for(int i = 0; i < n; i++)
+            {
+                Console.Write(arr[i] + ",");
             }
         }
 	}

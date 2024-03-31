@@ -25,6 +25,28 @@ namespace DSA.Algorithms
                 Console.WriteLine(arr[i]);
             }
         }
+
+        public static void SelectionSort(int[] arr)
+        {
+            int n = arr.Length;
+            int min, temp;   //min = minimium, temp=temporal;
+            for (int outer = 0; outer <= n - 1; outer++)
+            {
+                min = outer;
+                for(int inner = outer + 1; inner < n; inner++)
+                {
+                    if (arr[inner] < arr[min])
+                    {
+                        min = inner;
+                    }
+
+                    temp = arr[outer];
+                    arr[outer] = arr[min];
+                    arr[min] = temp;
+                }
+            }
+        }
 	}
+
 }
 

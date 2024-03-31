@@ -54,6 +54,31 @@ namespace DSA.Algorithms
                 Console.Write(arr[i] + ",");
             }
         }
+
+        public static void InsertionSort(int[] arr)
+        {
+            int n = arr.Length;
+
+            for(int i = 1; i < n; i++)
+            {
+                int key = arr[i];
+                int before = i - 1;
+
+                while(before >= 0 && arr[before] > key)
+                {
+                    arr[before + 1] = arr[before];
+                    before = before - 1;
+                }
+
+                arr[before + 1] = key;
+            }
+
+            for(int i = 0; i < n; i++)
+            {
+                Console.Write(arr[i] + ",");
+            }
+            
+        }
 	}
 
 }

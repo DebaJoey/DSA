@@ -125,7 +125,7 @@ using DSA.Hackerrank;
 
 CArray nums = new CArray(10);
 Random rnd = new Random(100);
-int[] aL = new int[] { 57, 90, 22, 45, 6 };
+int[] aL = new int[] { 57, 90, 22, 2, 45, 6 };
 
 for(int i = 0; i < 10; i++)
 {
@@ -137,4 +137,5 @@ for(int i = 0; i < 10; i++)
 //SortingAlgorithms.BubbleSortAscending(aL);
 //SortingAlgorithms.SelectionSort(aL);
 //SortingAlgorithms.InsertionSort(aL);
-BasicSearchingAlgorithms.SequentialSearching(aL, 6);
+//BasicSearchingAlgorithms.SequentialSearching(aL, 6);
+BasicSearchingAlgorithms.FindMin(aL);

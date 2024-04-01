@@ -138,4 +138,5 @@ for(int i = 0; i < 10; i++)
 //SortingAlgorithms.SelectionSort(aL);
 //SortingAlgorithms.InsertionSort(aL);
 //BasicSearchingAlgorithms.SequentialSearching(aL, 6);
-BasicSearchingAlgorithms.FindMin(aL);
+//BasicSearchingAlgorithms.FindMin(aL);
+BasicSearchingAlgorithms.FindMax(aL);

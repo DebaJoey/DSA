@@ -36,6 +36,23 @@ namespace DSA.Algorithms
 			return min;
 		}
 
+		public static int FindMax(int[] arr)
+		{
+
+			int max = arr[0];
+
+			for(int i = 0; i < arr.Length; i++)
+			{
+				if (arr[i] > max)
+				{
+					max = arr[i];
+				}
+			}
+
+			Console.WriteLine(max);
+			return max;
+		}
+
 
 	}
 }

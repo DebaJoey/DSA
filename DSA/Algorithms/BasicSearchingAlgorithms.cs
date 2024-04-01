@@ -11,6 +11,14 @@ namespace DSA.Algorithms
 				if (arr[i] == searchValue)
 				{
 					Console.WriteLine(i);
+
+					if(i != 0)    // Self-Organization
+					{
+						int temp = arr[i];
+						arr[i] = arr[0];
+						arr[0] = temp;
+					}
+
 					return i;
 				}
 

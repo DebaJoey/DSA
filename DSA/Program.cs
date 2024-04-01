@@ -126,6 +126,7 @@ using DSA.Hackerrank;
 CArray nums = new CArray(10);
 Random rnd = new Random(100);
 int[] aL = new int[] { 57, 90, 22, 2, 45, 6 };
+int[] sortedArray = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
 
 for(int i = 0; i < 10; i++)
 {
@@ -139,4 +140,5 @@ for(int i = 0; i < 10; i++)
 //SortingAlgorithms.InsertionSort(aL);
 //BasicSearchingAlgorithms.SequentialSearching(aL, 6);
 //BasicSearchingAlgorithms.FindMin(aL);
-BasicSearchingAlgorithms.FindMax(aL);
+//BasicSearchingAlgorithms.FindMax(aL);
+BasicSearchingAlgorithms.BinarySearch(sortedArray,9);

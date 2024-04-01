@@ -61,6 +61,36 @@ namespace DSA.Algorithms
 			return max;
 		}
 
+		public static int BinarySearch(int[] arr, int searchValue)
+		{
+			int upperBound, lowerBound, midPoint;
+			upperBound = arr.Length -1;
+			lowerBound = 0;
+
+			while(lowerBound <= upperBound)
+			{
+
+                midPoint = (lowerBound + upperBound) / 2;
+
+                if (arr[midPoint] == searchValue)
+				{
+					Console.WriteLine(midPoint);
+					return midPoint;
+				}
+				else if (arr[midPoint] > searchValue)
+				{
+					upperBound = midPoint - 1;
+				}
+				else
+				{
+					lowerBound = midPoint + 1; 
+				}
+			}
+
+			Console.WriteLine(-1);
+			return -1;
+		}
+
 
 	}
 }

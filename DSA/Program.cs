@@ -136,4 +136,5 @@ for(int i = 0; i < 10; i++)
 
 //SortingAlgorithms.BubbleSortAscending(aL);
 //SortingAlgorithms.SelectionSort(aL);
-SortingAlgorithms.InsertionSort(aL);
+//SortingAlgorithms.InsertionSort(aL);
+BasicSearchingAlgorithms.SequentialSearching(aL, 6);

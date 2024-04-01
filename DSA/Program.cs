@@ -141,4 +141,5 @@ for(int i = 0; i < 10; i++)
 //BasicSearchingAlgorithms.SequentialSearching(aL, 6);
 //BasicSearchingAlgorithms.FindMin(aL);
 //BasicSearchingAlgorithms.FindMax(aL);
-BasicSearchingAlgorithms.BinarySearch(sortedArray,9);
+//BasicSearchingAlgorithms.BinarySearch(sortedArray,9);
+BasicSearchingAlgorithms.RecursiveBinarySearch(sortedArray, 8, sortedArray.Length, 0);

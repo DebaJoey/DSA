@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net;
+
 namespace DSA.Algorithms
 {
 	public class BasicSearchingAlgorithms
@@ -91,6 +93,29 @@ namespace DSA.Algorithms
 			return -1;
 		}
 
+		public static int RecursiveBinarySearch(int[] arr, int value, int upper, int lower)
+		{
+			if (upper > lower)
+			{
+				int midPoint = (int)(lower + upper) / 2;
+
+				if (arr[midPoint] == value)
+				{
+					Console.WriteLine(midPoint);
+                    return midPoint;
+                }
+					
+
+				if (arr[midPoint] > value)
+					return RecursiveBinarySearch(arr, value, midPoint - 1, lower);
+
+				if (arr[midPoint] < value)
+				    return RecursiveBinarySearch(arr, value, upper, midPoint + 1);
+            }
+
+            Console.WriteLine(-1);
+            return -1;
+		}
 
 	}
 }

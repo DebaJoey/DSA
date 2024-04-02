@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace DSA.Stack
+namespace DSA.CStack
 {
 	public class CStack
 	{
@@ -33,7 +33,7 @@ namespace DSA.Stack
 
 		public object pop()
 		{
-			object obj = list[p_index];
+            object obj = list[p_index];
 			list.RemoveAt(p_index);
 			p_index--;
 			return obj;

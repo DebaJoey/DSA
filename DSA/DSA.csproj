@@ -12,13 +12,13 @@
     <None Remove="Arrays\" />
     <None Remove="Hackerrank\" />
     <None Remove="Algorithms\" />
-    <None Remove="Stack\" />
+    <None Remove="CStack\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract Data Type\" />
     <Folder Include="Arrays\" />
     <Folder Include="Hackerrank\" />
     <Folder Include="Algorithms\" />
-    <Folder Include="Stack\" />
+    <Folder Include="CStack\" />
   </ItemGroup>
 </Project>

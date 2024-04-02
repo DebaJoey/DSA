@@ -7,6 +7,7 @@ using DSA.AbstractDataType;
 using DSA.Algorithms;
 using DSA.Arrays;
 using DSA.Hackerrank;
+using DSA.CStack;
 
 //Abstract Data Type
 
@@ -144,3 +145,7 @@ for(int i = 0; i < 10; i++)
 //BasicSearchingAlgorithms.BinarySearch(sortedArray,9);
 //BasicSearchingAlgorithms.RecursiveBinarySearch(sortedArray, 8, sortedArray.Length, 0);
 //int index = Array.BinarySearch(sortedArray, 8);
+
+//Palindrome
+
+Challenges.isPalindrome("spops");

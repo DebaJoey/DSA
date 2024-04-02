@@ -54,7 +54,7 @@ namespace DSA.Algorithms
                     {
                         if (adj.Substring(i + 1, 1) != ")")
                         {
-                            falsy++;
+                            return false;
                         }
                     }
 
@@ -62,7 +62,7 @@ namespace DSA.Algorithms
                     {
                         if(adj.Substring(i+1, 1) != "}")
                         {
-                           falsy++;
+                            return false;
                         }
                     }
 
@@ -70,24 +70,23 @@ namespace DSA.Algorithms
                     {
                         if(adj.Substring(i + 1, 1) != "]")
                         {
-                           falsy++;
+                            return false;
                         }
                     }
 
                     else
                     {
-                        falsy++;
+                        return false;
                     }
 
                 }
             }
 
-            if (falsy <= 0 && adj.Length > 1)
+            if(adj.Length < 1)
             {
-                return true;
+                return false;
             }
-
-            return false;
+            return true;
         }
     }
 }

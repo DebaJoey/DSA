@@ -150,4 +150,4 @@ for(int i = 0; i < 10; i++)
 
 //Challenges.isPalindrome("spops");
 
-Console.WriteLine(Challenges.isAdjacent("(){}"));
+Console.WriteLine(Challenges.isAdjacent(" "));

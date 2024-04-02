@@ -148,4 +148,6 @@ for(int i = 0; i < 10; i++)
 
 //Palindrome
 
-Challenges.isPalindrome("spops");
+//Challenges.isPalindrome("spops");
+
+Console.WriteLine(Challenges.isAdjacent("(){}"));

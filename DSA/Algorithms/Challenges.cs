@@ -40,6 +40,55 @@ namespace DSA.Algorithms
             }
 
         }
+
+        public static bool isAdjacent(string adj)
+        {
+
+            int falsy = 0;
+
+            for(int i = 0; i < adj.Length; i++)
+            {
+                if(i == 0 || i%2 == 0 && adj.Length > 1)
+                {
+                    if(adj.Substring(i,1) == "(")
+                    {
+                        if (adj.Substring(i + 1, 1) != ")")
+                        {
+                            falsy++;
+                        }
+                    }
+
+                    else if(adj.Substring(i, 1) == "{" && i + 1 < adj.Length)
+                    {
+                        if(adj.Substring(i+1, 1) != "}")
+                        {
+                           falsy++;
+                        }
+                    }
+
+                    else if(adj.Substring(i, 1) == "[" && i + 1 < adj.Length)
+                    {
+                        if(adj.Substring(i + 1, 1) != "]")
+                        {
+                           falsy++;
+                        }
+                    }
+
+                    else
+                    {
+                        falsy++;
+                    }
+
+                }
+            }
+
+            if (falsy <= 0 && adj.Length > 1)
+            {
+                return true;
+            }
+
+            return false;
+        }
     }
 }
 

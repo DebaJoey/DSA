@@ -13,6 +13,7 @@
     <None Remove="Hackerrank\" />
     <None Remove="Algorithms\" />
     <None Remove="CStack\" />
+    <None Remove="CQueue\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract Data Type\" />
@@ -20,5 +21,6 @@
     <Folder Include="Hackerrank\" />
     <Folder Include="Algorithms\" />
     <Folder Include="CStack\" />
+    <Folder Include="CQueue\" />
   </ItemGroup>
 </Project>

@@ -88,6 +88,23 @@ namespace DSA.Algorithms
             }
             return true;
         }
+
+        public static void decimalToBase(int number, int baseNumber )
+        {
+            Stack baseStack = new Stack();
+
+            do
+            {
+                baseStack.Push(number % baseNumber);
+
+                number /= baseNumber;
+            } while (number != 0);
+
+            while(baseStack.Count > 0)
+            {
+                Console.Write(baseStack.Pop());
+            }
+        }
     }
 }
 

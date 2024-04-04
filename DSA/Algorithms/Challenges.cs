@@ -105,6 +105,71 @@ namespace DSA.Algorithms
                 Console.Write(baseStack.Pop());
             }
         }
+
+        public enum DigitType {ones = 1, tens = 10};
+
+        public static void sortNumbers( ref Queue[] queue, int[] n, DigitType digit)
+        {
+            int sNum;
+
+            for(int x = 0; x < n.Length; x++)
+            {
+                if (digit == DigitType.ones)
+                {
+                    var tin = n[x];
+                    sNum = n[x] % 10;
+                 
+                }
+                else
+                {
+                    sNum = n[x] / 10;
+                }
+
+                queue[sNum].Enqueue(n[x]);
+            }
+        }
+
+        public static void initializeQueues(ref Queue[] queue)
+        {
+            for(int i = 0; i < queue.Length; i++)
+            {
+                queue[i] = new Queue();
+            }
+        }
+
+        public static void displayArray(ref int[] array)
+        {
+            for(int i = 0; i < array.Length; i++)
+            {
+                if(i == 0)
+                {
+                    Console.Write("[" + array[i] + ",");
+                }
+                else if( i == array.Length - 1)
+                {
+                    Console.Write(array[i] + "]");
+                }
+                else
+                {
+                    Console.Write(array[i] + ",");
+                }
+                
+            }    
+        }
+
+        public static void BuildArray(ref Queue[] queue, ref int[] array)
+        {
+            int y = 0;
+
+            for(int i = 0; i < queue.Length; i++ )
+            {
+                while (queue[i].Count > 0)
+                {
+                    array[y] = Int32.Parse(queue[i].Dequeue().ToString());
+                    y++;
+                }
+            }
+        }
     }
 }
 

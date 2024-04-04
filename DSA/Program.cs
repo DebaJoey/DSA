@@ -8,6 +8,7 @@ using DSA.Algorithms;
 using DSA.Arrays;
 using DSA.Hackerrank;
 using DSA.CStack;
+using static DSA.Algorithms.Challenges;
 
 //Abstract Data Type
 
@@ -152,4 +153,16 @@ for(int i = 0; i < 10; i++)
 
 //Console.WriteLine(Challenges.isAdjacent(""));
 
-Challenges.decimalToBase(10, 2);
+//Challenges.decimalToBase(10, 2);
+
+int[] array = new int[] { 21, 30, 73, 46, 10, 65, 99,43,92,500 };
+Queue[] que = new Queue[10];
+
+Challenges.initializeQueues(ref que);
+Challenges.sortNumbers(ref que,array,DigitType.ones);
+Challenges.BuildArray(ref que, ref array);
+Challenges.displayArray(ref array);
+Challenges.sortNumbers(ref que, array, DigitType.tens);
+Challenges.BuildArray(ref que, ref array);
+Console.WriteLine();
+Challenges.displayArray(ref array);

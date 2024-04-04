@@ -9,6 +9,7 @@ using DSA.Arrays;
 using DSA.Hackerrank;
 using DSA.CStack;
 using static DSA.Algorithms.Challenges;
+using DSA.CQueue;
 
 //Abstract Data Type
 
@@ -155,14 +156,49 @@ for(int i = 0; i < 10; i++)
 
 //Challenges.decimalToBase(10, 2);
 
-int[] array = new int[] { 21, 30, 73, 46, 10, 65, 99,43,92,500 };
-Queue[] que = new Queue[10];
+//int[] array = new int[] { 21, 30, 73, 46, 10, 65, 99,43,92,50 };
+//Queue[] que = new Queue[10];
 
-Challenges.initializeQueues(ref que);
-Challenges.sortNumbers(ref que,array,DigitType.ones);
-Challenges.BuildArray(ref que, ref array);
-Challenges.displayArray(ref array);
-Challenges.sortNumbers(ref que, array, DigitType.tens);
-Challenges.BuildArray(ref que, ref array);
-Console.WriteLine();
-Challenges.displayArray(ref array);
+//Challenges.initializeQueues(ref que);
+//Challenges.sortNumbers(ref que,array,DigitType.ones);
+//Challenges.BuildArray(ref que, ref array);
+//Challenges.displayArray(ref array);
+//Challenges.sortNumbers(ref que, array, DigitType.tens);
+//Challenges.BuildArray(ref que, ref array);
+//Console.WriteLine();
+//Challenges.displayArray(ref array);
+
+pqItem priorityQue = new pqItem
+{
+    Priority = 2,
+    Name = "Adwoa"
+};
+
+pqItem priorityQue1 = new pqItem
+{
+    Priority = 6,
+    Name = "Abena"
+};
+
+pqItem priorityQue2 = new pqItem
+{
+    Priority = 5,
+    Name = "Koo"
+};
+
+pqItem priorityQue3 = new pqItem
+{
+    Priority = 34,
+    Name = "Baaba"
+};
+
+PriorityQueue pQueue = new PriorityQueue();
+
+pQueue.Enqueue(priorityQue);
+pQueue.Enqueue(priorityQue1);
+pQueue.Enqueue(priorityQue2);
+pQueue.Enqueue(priorityQue3);
+
+Console.WriteLine(((pqItem)pQueue.Dequeue()).Name);
+
+

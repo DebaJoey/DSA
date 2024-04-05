@@ -212,4 +212,13 @@ for(int i = 0; i < 10; i++)
 //primes.GenPrimes();
 //primes.ShowPrimes();
 
-Solution.LengthOfLongestSubstringList("ab");
+//LongestSubArray.LengthOfLongestSubstringHashSet("pwwkew");
+
+string name = "Hello,World,me";
+char[] separator = new char[] { ',' };
+string[] strArray = name.Split(separator,2);
+string newArray = string.Join(' ', strArray);
+
+Console.WriteLine(newArray);
+
+

@@ -10,6 +10,7 @@ using DSA.Hackerrank;
 using DSA.CStack;
 using static DSA.Algorithms.Challenges;
 using DSA.CQueue;
+using System.Text;
 
 //Abstract Data Type
 
@@ -250,9 +251,16 @@ for(int i = 0; i < 10; i++)
 
 //Trim
 
-string comments = "<--Well, Well, Well-->";
-char[] charac = new char[] { '<','-','>' };
-Console.WriteLine(comments.Trim(charac));
+//string comments = "<--Well, Well, Well-->";
+//char[] charac = new char[] { '<','-','>' };
+//Console.WriteLine(comments.Trim(charac));
+
+//StringBuilder
+
+StringBuilder stBuff = new StringBuilder("Ken Thompson");
+stBuff[0] = 'D';
+Console.WriteLine(stBuff.Capacity);
+Console.WriteLine(stBuff.Insert(0,"Patience",3));
 
 
 

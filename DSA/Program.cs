@@ -223,13 +223,37 @@ for(int i = 0; i < 10; i++)
 //int charCode = (int)'d';
 //Console.WriteLine(charCode);
 
-string str1 = "foocar";
-string str2 = "foobar";
-Console.WriteLine(String.Compare(str1,str2));
-Console.WriteLine(str1.CompareTo(str2));
-Console.WriteLine(str1.StartsWith("f"));
-Console.WriteLine(str1.StartsWith("d"));
-Console.WriteLine(str1.EndsWith("r"));
-Console.WriteLine(str1.EndsWith("d"));
+//string str1 = "foocar";
+//string str2 = "foobar";
+//Console.WriteLine(String.Compare(str1,str2));
+//Console.WriteLine(str1.CompareTo(str2));
+//Console.WriteLine(str1.StartsWith("f"));
+//Console.WriteLine(str1.StartsWith("d"));
+//Console.WriteLine(str1.EndsWith("r"));
+//Console.WriteLine(str1.EndsWith("d"));
+
+//string str1 = "StubbornAcademy";
+//string derivedString = str1.Remove(0, 8);
+//Console.WriteLine(derivedString.Insert(0, "Good "));
+//Console.WriteLine(str1.Replace("b", "c"));
+
+//string[] words = new string[]{"recieve", "decieve","reciept"};
+//for(int i = 0; i < words.Length; i++)
+//{
+//    words[i] = words[i].Replace("ie", "ei");
+//    Console.WriteLine((i + 1) + words[i]);
+//}
+
+//string word = "Hello";
+//string wrld = "World";
+//Console.WriteLine(String.Concat(word," ",wrld));
+
+//Trim
+
+string comments = "<--Well, Well, Well-->";
+char[] charac = new char[] { '<','-','>' };
+Console.WriteLine(comments.Trim(charac));
+
+
 
 

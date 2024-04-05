@@ -214,11 +214,22 @@ for(int i = 0; i < 10; i++)
 
 //LongestSubArray.LengthOfLongestSubstringHashSet("pwwkew");
 
-string name = "Hello,World,me";
-char[] separator = new char[] { ',' };
-string[] strArray = name.Split(separator,2);
-string newArray = string.Join(' ', strArray);
+//string name = "Hello,World,me";
+//char[] separator = new char[] { ',' };
+//string[] strArray = name.Split(separator,2);
+//string newArray = string.Join(' ', strArray);
 
-Console.WriteLine(newArray);
+//ASC Code of strings
+//int charCode = (int)'d';
+//Console.WriteLine(charCode);
+
+string str1 = "foocar";
+string str2 = "foobar";
+Console.WriteLine(String.Compare(str1,str2));
+Console.WriteLine(str1.CompareTo(str2));
+Console.WriteLine(str1.StartsWith("f"));
+Console.WriteLine(str1.StartsWith("d"));
+Console.WriteLine(str1.EndsWith("r"));
+Console.WriteLine(str1.EndsWith("d"));
 
 

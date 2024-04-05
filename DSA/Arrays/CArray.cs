@@ -24,7 +24,7 @@ namespace DSA.Arrays
 
 		public void DisplayElements()
 		{
-			for(int i = 0; i <= upper; i++ )
+			for (int i = 0; i <= upper; i++)
 			{
 				Console.WriteLine(arr[i] + " ");
 			}
@@ -32,13 +32,39 @@ namespace DSA.Arrays
 
 		public void Clear()
 		{
-			for(int i = 0; i <= upper; i++)
+			for (int i = 0; i <= upper; i++)
 			{
 				arr[i] = 0;
 				numElements = 0;
 			}
 		}
 
-	}
+		public void GenPrimes()
+		{
+			for (int outer = 1; outer < arr.Length; outer++)
+			{
+				for (int inner = outer + 1; inner < arr.Length; inner++)
+				{
+					if (arr[inner] == 1)
+					{
+						if (inner % outer == 0)
+						{
+							arr[inner] = 0;
+						}
+					}
+				}
+			}
+		}
+
+		public void ShowPrimes()
+
+		{
+			for (int i = 0; i < arr.Length; i++)
+			{
+				Console.Write(arr[i] + ",");
+			}
+		} 
+
+    }
 }
 

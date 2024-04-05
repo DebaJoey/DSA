@@ -28,8 +28,8 @@ namespace DSA.CQueue
 				int priorityI = ((pqItem)items[i]).Priority;
                 if (priorityI < min)
 				{
-					min = priorityI;
-					minindex = i;
+					min = priorityI; //the pqItem with the lowest priority level
+					minindex = i;  //set the minimum index to the index of the item with the lowest priority level
 				}
 
 			}
@@ -38,7 +38,7 @@ namespace DSA.CQueue
 
             for (int y = 0; y < items.Length; y++)
             {
-                int priorityY = ((pqItem)items[y]).Priority;
+                
                 if (y != minindex && ((pqItem)items[y]).Name != "")
 				{
 					this.Enqueue(items[y]);

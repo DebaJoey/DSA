@@ -168,37 +168,48 @@ for(int i = 0; i < 10; i++)
 //Console.WriteLine();
 //Challenges.displayArray(ref array);
 
-pqItem priorityQue = new pqItem
-{
-    Priority = 2,
-    Name = "Adwoa"
-};
+//pqItem priorityQue = new pqItem
+//{
+//    Priority = 2,
+//    Name = "Adwoa"
+//};
 
-pqItem priorityQue1 = new pqItem
-{
-    Priority = 6,
-    Name = "Abena"
-};
+//pqItem priorityQue1 = new pqItem
+//{
+//    Priority = 6,
+//    Name = "Abena"
+//};
 
-pqItem priorityQue2 = new pqItem
-{
-    Priority = 5,
-    Name = "Koo"
-};
+//pqItem priorityQue2 = new pqItem
+//{
+//    Priority = 5,
+//    Name = "Koo"
+//};
 
-pqItem priorityQue3 = new pqItem
-{
-    Priority = 34,
-    Name = "Baaba"
-};
+//pqItem priorityQue3 = new pqItem
+//{
+//    Priority = 34,
+//    Name = "Baaba"
+//};
 
-PriorityQueue pQueue = new PriorityQueue();
+//PriorityQueue pQueue = new PriorityQueue();
 
-pQueue.Enqueue(priorityQue);
-pQueue.Enqueue(priorityQue1);
-pQueue.Enqueue(priorityQue2);
-pQueue.Enqueue(priorityQue3);
+//pQueue.Enqueue(priorityQue);
+//pQueue.Enqueue(priorityQue1);
+//pQueue.Enqueue(priorityQue2);
+//pQueue.Enqueue(priorityQue3);
 
-Console.WriteLine(((pqItem)pQueue.Dequeue()).Name);
+//Console.WriteLine(((pqItem)pQueue.Dequeue()).Name);
 
+//int size = 100;
+//CArray primes = new CArray(size - 1);
 
+//for(int i = 0; i < size - 1; i++)
+//{
+//    primes.Insert(1);
+//}
+
+//primes.GenPrimes();
+//primes.ShowPrimes();
+
+Solution.LengthOfLongestSubstringList("ab");

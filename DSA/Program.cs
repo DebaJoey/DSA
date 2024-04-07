@@ -282,11 +282,15 @@ Regex reg = new Regex("the");
 
 //Regex Multiple Matches
 
-string str3 = "I am the Prince Of the kingdom of Zamunda;";
-MatchCollection matches;
-matches = reg.Matches(str3);
+//string str3 = "I am the Prince Of the kingdom of Zamunda;";
+//MatchCollection matches;
+//matches = reg.Matches(str3);
 
-foreach(Match match in matches)
-{
-    Console.WriteLine("Match found at position :" + match.Index);
-}
+//foreach(Match match in matches)
+//{
+//    Console.WriteLine("Match found at position :" + match.Index);
+//}
+
+string str4 = "what is going on here. Huh?? I said what is going on here.";
+str4 = Regex.Replace(str4, "what", "who");
+Console.WriteLine(str4);

@@ -266,7 +266,7 @@ for(int i = 0; i < 10; i++)
 
 //Regex
 
-//Regex reg = new Regex("brown");
+Regex reg = new Regex("the");
 //string str1 = "the quick brown fox jumped over the lazy dog";
 
 //Match matchSet;
@@ -279,14 +279,14 @@ for(int i = 0; i < 10; i++)
 //    Console.WriteLine("found mtch at position :" + matchPos);
 //}
 
-string str2 = "Hello my friend. It's me again.";
 
-if(Regex.IsMatch(str2, "friends"))
-{
-    Console.WriteLine("Match found");
-}
-else
-{
-    Console.WriteLine("Match not found");
-}
+//Regex Multiple Matches
 
+string str3 = "I am the Prince Of the kingdom of Zamunda;";
+MatchCollection matches;
+matches = reg.Matches(str3);
+
+foreach(Match match in matches)
+{
+    Console.WriteLine("Match found at position :" + match.Index);
+}

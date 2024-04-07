@@ -11,6 +11,7 @@ using DSA.CStack;
 using static DSA.Algorithms.Challenges;
 using DSA.CQueue;
 using System.Text;
+using System.Text.RegularExpressions;
 
 //Abstract Data Type
 
@@ -257,11 +258,26 @@ for(int i = 0; i < 10; i++)
 
 //StringBuilder
 
-StringBuilder stBuff = new StringBuilder("Ken Thompson");
-stBuff[0] = 'D';
-Console.WriteLine(stBuff.Capacity);
-Console.WriteLine(stBuff.Insert(0,"Patience",3));
+//StringBuilder stBuff = new StringBuilder("Ken Thompson");
+//stBuff[0] = 'D';
+//Console.WriteLine(stBuff.Capacity);
+//Console.WriteLine(stBuff.Insert(0,"Patience",3));
 
+
+//Regex
+
+Regex reg = new Regex("brown");
+string str1 = "the quick brown fox jumped over the lazy dog";
+
+Match matchSet;
+int matchPos;
+matchSet = reg.Match(str1);
+
+if (matchSet.Success)
+{
+    matchPos = matchSet.Index;
+    Console.WriteLine("found mtch at position :" + matchPos);
+}
 
 
 

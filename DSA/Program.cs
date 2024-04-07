@@ -266,18 +266,27 @@ for(int i = 0; i < 10; i++)
 
 //Regex
 
-Regex reg = new Regex("brown");
-string str1 = "the quick brown fox jumped over the lazy dog";
+//Regex reg = new Regex("brown");
+//string str1 = "the quick brown fox jumped over the lazy dog";
 
-Match matchSet;
-int matchPos;
-matchSet = reg.Match(str1);
+//Match matchSet;
+//int matchPos;
+//matchSet = reg.Match(str1);
 
-if (matchSet.Success)
+//if (matchSet.Success)
+//{
+//    matchPos = matchSet.Index;
+//    Console.WriteLine("found mtch at position :" + matchPos);
+//}
+
+string str2 = "Hello my friend. It's me again.";
+
+if(Regex.IsMatch(str2, "friends"))
 {
-    matchPos = matchSet.Index;
-    Console.WriteLine("found mtch at position :" + matchPos);
+    Console.WriteLine("Match found");
 }
-
-
+else
+{
+    Console.WriteLine("Match not found");
+}
 

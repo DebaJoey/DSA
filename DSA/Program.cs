@@ -291,6 +291,17 @@ Regex reg = new Regex("the");
 //    Console.WriteLine("Match found at position :" + match.Index);
 //}
 
-string str4 = "what is going on here. Huh?? I said what is going on here.";
-str4 = Regex.Replace(str4, "what", "who");
-Console.WriteLine(str4);
+//string str4 = "what is going on here. Huh?? I said what is going on here.";
+//str4 = Regex.Replace(str4, "what", "who");
+//Console.WriteLine(str4);
+
+//Regex Quantifiers
+string[] words = new string[] { "bad", "bong", "baag", "bend", "baaad" };
+
+foreach(string word in words)
+{
+    if(Regex.IsMatch(word, "ba*"))
+    {
+        Console.WriteLine(word);
+    }
+}

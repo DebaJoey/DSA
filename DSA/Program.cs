@@ -296,11 +296,27 @@ Regex reg = new Regex("the");
 //Console.WriteLine(str4);
 
 //Regex Quantifiers
-string[] words = new string[] { "bad", "bong", "baag", "bend", "baaad" };
+string[] words = new string[] { "bad", "bd", "bong", "baag", "bend", "baaad","caad" };
 
-foreach(string word in words)
+//foreach(string word in words)
+//{
+//    if(Regex.IsMatch(word, "ba+"))
+//    {
+//        Console.WriteLine(word);
+//    }
+//}
+
+//foreach (string word in words)
+//{
+//    if (Regex.IsMatch(word, "ba*"))
+//    {
+//        Console.WriteLine(word);
+//    }
+//}
+
+foreach (string word in words)
 {
-    if(Regex.IsMatch(word, "ba*"))
+    if (Regex.IsMatch(word, "ba?d"))
     {
         Console.WriteLine(word);
     }

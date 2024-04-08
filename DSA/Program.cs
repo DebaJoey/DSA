@@ -330,11 +330,52 @@ string[] words = new string[] { "bad", "bd", "bong", "baag", "bend", "baaad","ca
 //    }
 //}
 
-foreach (string word in words)
-{
-    if (Regex.IsMatch(word, "ba{2,4}"))
-    {
-        Console.WriteLine(word);
-    }
-}
+//foreach (string word in words)
+//{
+//    if (Regex.IsMatch(word, "ba{2,4}"))
+//    {
+//        Console.WriteLine(word);
+//    }
+//}
 
+
+//Lazy Quantifiers
+
+//string[] wordz = new string[] { "board", "<b>Boarder Patrol</b>", "Quotation", "<p>Oh Dear, Whats happening</p>" };
+//string regEx = "<.+>";
+//string regEx1 = "<.*>";
+//string regEx2 = "<.+?>";
+
+//MatchCollection matchez;
+
+//foreach(string word in wordz)
+//{
+//    matchez = Regex.Matches(word, regEx2);
+
+//    foreach(Match match in matchez)
+//    {
+//      var mat =  match.Value;
+//        Console.WriteLine(mat);
+//    }
+
+//    //for(int i = 0; i < matchez.Count; i++)
+//    //{
+//    //    Console.WriteLine(matchez[i]);
+//    //};
+
+//}
+
+//Character Classes
+
+string str6 = "THE boy Is tHe BOY'S father 245";
+//MatchCollection matchezz = Regex.Matches(str6, "t.e");
+//foreach(Match match in matchezz)
+//{
+//    Console.WriteLine("position" + match.Index);
+//}
+
+MatchCollection charMatch = Regex.Matches(str6, "\\D");
+foreach(Match match in charMatch)
+{
+    Console.WriteLine(match.Value);
+}

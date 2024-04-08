@@ -322,10 +322,19 @@ string[] words = new string[] { "bad", "bd", "bong", "baag", "bend", "baaad","ca
 //    }
 //}
 
+//foreach (string word in words)
+//{
+//    if (Regex.IsMatch(word, "ba{2}"))
+//    {
+//        Console.WriteLine(word);
+//    }
+//}
+
 foreach (string word in words)
 {
-    if (Regex.IsMatch(word, "ba{2}"))
+    if (Regex.IsMatch(word, "ba{2,4}"))
     {
         Console.WriteLine(word);
     }
 }
+

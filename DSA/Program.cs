@@ -367,15 +367,33 @@ string[] words = new string[] { "bad", "bd", "bong", "baag", "bend", "baaad","ca
 
 //Character Classes
 
-string str6 = "THE boy Is tHe BOY'S father 245";
+string str6 = "THE boy faith Is hoy tHe BOY'S father kol 24 moh";
+string[] str8 = new string[] { "foth", "cofuuhurde", "ffff", "fpoi" };
 //MatchCollection matchezz = Regex.Matches(str6, "t.e");
-//foreach(Match match in matchezz)
+//foreach (Match match in matchezz)
 //{
 //    Console.WriteLine("position" + match.Index);
 //}
 
-MatchCollection charMatch = Regex.Matches(str6, "\\D");
-foreach(Match match in charMatch)
+
+//foreach (string match in str8)
+//{
+//    if (Regex.IsMatch(match, "\\bf\\w*h\\b"))
+//    {
+//        Console.WriteLine(match);
+//    }
+//}
+
+//Console.WriteLine(Regex.IsMatch("father", "r\\b"));
+//Console.WriteLine(Regex.IsMatch("soc5cer", "\\bs\\w*r\\b"));
+
+//Anonymous Groups
+
+string dates = "08/14/57 46 02/25/59 45 06/05/85 18 03/12/88 16 09/09/90 13";
+string regExp1 = "(\\s\\d{2}\\s)";
+MatchCollection matchSet = Regex.Matches(dates, regExp1);
+
+foreach(Match match in matchSet)
 {
-    Console.WriteLine(match.Value);
+    Console.WriteLine(match.Groups[0].Captures[0]);
 }

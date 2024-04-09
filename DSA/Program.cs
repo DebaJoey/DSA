@@ -402,8 +402,9 @@ string[] str8 = new string[] { "foth", "cofuuhurde", "ffff", "fpoi" };
 string wordsz = "123routine Koko25 routine2 procedure8 45procedure";
 string regExp1 = "\\b(?!\\d)\\w+\\b";
 string lookAheadAssertion = "\\w+(?=\\d)";
+string lookBehindAssertion = "(?<=\\d)\\w+";
 
-MatchCollection matchezzz = Regex.Matches(wordsz, lookAheadAssertion);
+MatchCollection matchezzz = Regex.Matches(wordsz, lookBehindAssertion);
 foreach(Match match in matchezzz)
 {
     Console.WriteLine(match.Value);

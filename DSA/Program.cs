@@ -389,12 +389,23 @@ string[] str8 = new string[] { "foth", "cofuuhurde", "ffff", "fpoi" };
 
 //Anonymous Groups
 
-string dates = "08/14/57 46 02/25/59 45 06/05/85 18 03/12/88 16 09/09/90 13";
-string regExp1 = "(\\s\\d{2}\\s)";
-string regExp2 = "(?<dates>(\\d{2}/\\d{2}/\\d{2}))\\s";
-MatchCollection matchSet = Regex.Matches(dates, regExp2);
+//string dates = "08/14/57 46 02/25/59 45 06/05/85 18 03/12/88 16 09/09/90 13";
+//string regExp1 = "(\\s\\d{2}\\s)";
+//string regExp2 = "(?<dates>(\\d{2}/\\d{2}/\\d{2}))\\s";
+//MatchCollection matchSet = Regex.Matches(dates, regExp2);
 
-foreach(Match match in matchSet)
+//foreach(Match match in matchSet)
+//{
+//    Console.WriteLine(match.Groups["dates"]);
+//}
+
+string wordsz = "123routine Koko25 routine2 procedure8 45procedure";
+string regExp1 = "\\b(?!\\d)\\w+\\b";
+string lookAheadAssertion = "\\w+(?=\\d)";
+
+MatchCollection matchezzz = Regex.Matches(wordsz, lookAheadAssertion);
+foreach(Match match in matchezzz)
 {
-    Console.WriteLine(match.Groups[0].Captures[0]);
+    Console.WriteLine(match.Value);
 }
+

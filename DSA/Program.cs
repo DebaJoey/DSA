@@ -391,7 +391,8 @@ string[] str8 = new string[] { "foth", "cofuuhurde", "ffff", "fpoi" };
 
 string dates = "08/14/57 46 02/25/59 45 06/05/85 18 03/12/88 16 09/09/90 13";
 string regExp1 = "(\\s\\d{2}\\s)";
-MatchCollection matchSet = Regex.Matches(dates, regExp1);
+string regExp2 = "(?<dates>(\\d{2}/\\d{2}/\\d{2}))\\s";
+MatchCollection matchSet = Regex.Matches(dates, regExp2);
 
 foreach(Match match in matchSet)
 {

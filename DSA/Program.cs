@@ -389,7 +389,7 @@ string[] str8 = new string[] { "foth", "cofuuhurde", "ffff", "fpoi" };
 
 //Anonymous Groups
 
-//string dates = "08/14/57 46 02/25/59 45 06/05/85 18 03/12/88 16 09/09/90 13";
+string dates = "08/14/57 46 02/25/59 45 06/05/85 18 03/12/88 16 09/09/90 13";
 //string regExp1 = "(\\s\\d{2}\\s)";
 //string regExp2 = "(?<dates>(\\d{2}/\\d{2}/\\d{2}))\\s";
 //MatchCollection matchSet = Regex.Matches(dates, regExp2);
@@ -403,10 +403,33 @@ string wordsz = "123routine Koko25 routine2 procedure8 45procedure";
 string regExp1 = "\\b(?!\\d)\\w+\\b";
 string lookAheadAssertion = "\\w+(?=\\d)";
 string lookBehindAssertion = "(?<=\\d)\\w+";
+string groupNames = "(?<dates>(\\d{2}/\\d{2}/\\d{2}))\\s(?<ages>(\\d{2}))\\s";
 
-MatchCollection matchezzz = Regex.Matches(wordsz, lookBehindAssertion);
-foreach(Match match in matchezzz)
+//MatchCollection matchezzz = Regex.Matches(wordsz, lookBehindAssertion);
+//foreach(Match match in matchezzz)
+//{
+//    Console.WriteLine(match.Value);
+//}
+
+MatchCollection matchezzz = Regex.Matches(dates, groupNames);
+
+foreach (Match date in matchezzz)
 {
-    Console.WriteLine(match.Value);
+    foreach (Capture dat in date.Groups["dates"].Captures)
+    {
+        Console.WriteLine("\n");
+        Console.WriteLine(dat.Value);
+    }
+       
+    
+}
+
+foreach (Match date in matchezzz)
+{
+    foreach (Capture dat in date.Groups["ages"].Captures)
+    {
+        Console.WriteLine("\n");
+        Console.WriteLine(dat.Value);
+    }
 }
 
